@@ -18,9 +18,3 @@ defineProps({
   }
 })
 </script>
-
-<style lang="scss" scoped>
-.product-grid {
-  width: 100%;
-}
-</style>
