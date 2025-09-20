@@ -1,0 +1,94 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-primary;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  margin-bottom: $spacing-sm;
+}
+
+.container {
+  max-width: $desktop;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.btn {
+  padding: $spacing-xs $spacing-md;
+  background-color: $secondary-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-md;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: $spacing-sm;
+  }
+}
+
+.card {
+  background: white;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: $spacing-md;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid $border-color;
+  margin-bottom: $spacing-lg;
+  
+  .tab {
+    padding: $spacing-sm $spacing-md;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: $text-color;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+    text-decoration: none;
+    
+    &.active {
+      border-bottom-color: $secondary-color;
+      font-weight: bold;
+    }
+    
+    &:hover {
+      border-bottom-color: $accent-color;
+    }
+  }
+}

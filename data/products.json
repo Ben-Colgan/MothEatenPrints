@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Vintage Moth Print #1",
+      "description": "A beautiful vintage-style moth print featuring intricate wing patterns in earth tones.",
+      "price": "$25.00",
+      "image": "/images/moth-1.jpg",
+      "category": "current",
+      "details": {
+        "size": "8x10 inches",
+        "material": "High-quality archival paper",
+        "technique": "Digital reproduction of original artwork",
+        "artist": "MothEaten Studio"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Luna Moth Study",
+      "description": "An ethereal Luna moth captured in delicate watercolor style.",
+      "price": "$30.00",
+      "image": "/images/moth-2.jpg",
+      "category": "current",
+      "details": {
+        "size": "11x14 inches",
+        "material": "Fine art paper",
+        "technique": "Watercolor and ink",
+        "artist": "MothEaten Studio"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Death's Head Hawkmoth",
+      "description": "A dramatic representation of the iconic Death's Head Hawkmoth with gothic undertones.",
+      "price": "$35.00",
+      "image": "/images/moth-3.jpg",
+      "category": "current",
+      "details": {
+        "size": "12x16 inches",
+        "material": "Museum-quality paper",
+        "technique": "Mixed media",
+        "artist": "MothEaten Studio"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Cecropia Moth Collection",
+      "description": "A scientific study of Cecropia moths in various life stages.",
+      "price": "$40.00",
+      "image": "/images/moth-4.jpg",
+      "category": "current",
+      "details": {
+        "size": "16x20 inches",
+        "material": "Archival cotton paper",
+        "technique": "Scientific illustration",
+        "artist": "MothEaten Studio"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Antique Moth Specimen",
+      "description": "Vintage-style moth illustration reminiscent of Victorian natural history collections.",
+      "price": "$20.00",
+      "image": "/images/moth-5.jpg",
+      "category": "old",
+      "details": {
+        "size": "8x10 inches",
+        "material": "Aged paper texture",
+        "technique": "Sepia-toned reproduction",
+        "artist": "MothEaten Studio"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Moth Wing Patterns",
+      "description": "Abstract interpretation of moth wing patterns in muted colors.",
+      "price": "$28.00",
+      "image": "/images/moth-6.jpg",
+      "category": "old",
+      "details": {
+        "size": "10x10 inches",
+        "material": "Textured art paper",
+        "technique": "Abstract expressionism",
+        "artist": "MothEaten Studio"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Night Flutter",
+      "description": "A poetic representation of moths drawn to moonlight.",
+      "price": "$32.00",
+      "image": "/images/moth-7.jpg",
+      "category": "old",
+      "details": {
+        "size": "11x14 inches",
+        "material": "Heavy art paper",
+        "technique": "Charcoal and pastel",
+        "artist": "MothEaten Studio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+/* Simple CSS for testing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FDF5E6;
+  color: #2c1810;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  background-color: #8B4513;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #D2691E;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  border: 1px solid #8B4513;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #8B4513;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #2c1810;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+  text-decoration: none;
+}
+
+.tab.active {
+  border-bottom-color: #8B4513;
+  font-weight: bold;
+}
+
+.tab:hover {
+  border-bottom-color: #D2691E;
+}
+
+/* Layout styles */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 3rem 0;
+}
+
+/* Header styles */
+.header {
+  background-color: #2c1810;
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+.nav .tabs {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.nav .tab {
+  color: white;
+  border-bottom-color: transparent;
+}
+
+.nav .tab.active {
+  border-bottom-color: #D2691E;
+}
+
+.nav .tab:hover {
+  border-bottom-color: #D2691E;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #2c1810;
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-content p:last-child {
+  margin-bottom: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Page styles */
+.page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c1810;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #3c2220;
+  max-width: 600px;
+}
+
+/* Product styles */
+.product-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.product-card:hover .product-title {
+  color: #8B4513;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.product-description {
+  flex: 1;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #3c2220;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #8B4513;
+  margin-top: auto;
+}
