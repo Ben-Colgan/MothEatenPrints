@@ -29,7 +29,7 @@
         <!-- Image Carousel -->
         <div class="carousel">
           <div class="carousel-main">
-            <img :src="selectedArtwork.images[currentImageIndex]" :alt="selectedArtwork.title">
+            <img :src="getImagePath(selectedArtwork.images[currentImageIndex])" :alt="selectedArtwork.title">
             
             <!-- Navigation Arrows -->
             <button class="carousel-nav carousel-prev" @click.stop="prevImage" v-if="selectedArtwork.images.length > 1">
@@ -49,7 +49,7 @@
               :class="{ active: currentImageIndex === index }"
               @click.stop="currentImageIndex = index"
             >
-              <img :src="image" :alt="`${selectedArtwork.title} thumbnail ${index + 1}`">
+              <img :src="getImagePath(image)" :alt="`${selectedArtwork.title} thumbnail ${index + 1}`">
             </div>
           </div>
         </div>
@@ -108,7 +108,8 @@ export default {
     
     const fetchArtworks = async () => {
       try {
-        const response = await fetch('/data/artworks.json')
+        // Use import.meta.env.BASE_URL to get the base path configured in vite.config.js
+        const response = await fetch(import.meta.env.BASE_URL + 'data/artworks.json')
         const data = await response.json()
         artworks.value.current = data.current || []
         artworks.value.archived = data.archived || []
@@ -144,6 +145,10 @@ export default {
       }
     }
     
+    const getImagePath = (image) => {
+      return import.meta.env.BASE_URL + image
+    }
+    
     onMounted(() => {
       fetchArtworks()
     })
@@ -161,7 +166,8 @@ export default {
       openArtworkDetails,
       closeModal,
       nextImage,
-      prevImage
+      prevImage,
+      getImagePath
     }
   }
 }

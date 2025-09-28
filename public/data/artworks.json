@@ -8,11 +8,11 @@
       "dimensions": "24 cm × 33 cm",
       "description": "A striking contemporary piece that explores modern identity and expression through bold lines and contrasting elements.",
       "images": [
-        "/images/dude/dude-1.webp",
-        "/images/dude/dude-2.webp",
-        "/images/dude/dude-3.webp",
-        "/images/dude/dude-4.webp",
-        "/images/dude/dude-5.webp"
+        "./images/dude/dude-1.webp",
+        "./images/dude/dude-2.webp",
+        "./images/dude/dude-3.webp",
+        "./images/dude/dude-4.webp",
+        "./images/dude/dude-5.webp"
       ],
       "price": 30,
       "releaseDate": "August 15, 2025"
@@ -25,10 +25,10 @@
       "dimensions": "30 cm × 40 cm",
       "description": "An evocative piece capturing the essence of midweek contemplation, featuring haunting imagery and subtle undertones.",
       "images": [
-        "/images/wednesday/wednesday-1.webp",
-        "/images/wednesday/wednesday-2.webp",
-        "/images/wednesday/wednesday-3.webp",
-        "/images/wednesday/wednesday-4.webp"
+        "./images/wednesday/wednesday-1.webp",
+        "./images/wednesday/wednesday-2.webp",
+        "./images/wednesday/wednesday-3.webp",
+        "./images/wednesday/wednesday-4.webp"
       ],
       "price": 20,
       "releaseDate": "September 3, 2025"
@@ -43,9 +43,9 @@
       "dimensions": "28 cm × 36 cm",
       "description": "A bold and provocative artwork exploring themes of identity and vulnerability through abstract representation.",
       "images": [
-        "/images/dick/dick-1.webp",
-        "/images/dick/dick-2.webp",
-        "/images/dick/dick-3.webp"
+        "./images/dick/dick-1.webp",
+        "./images/dick/dick-2.webp",
+        "./images/dick/dick-3.webp"
       ],
       "releaseDate": "June 12, 2025",
       "price": 40

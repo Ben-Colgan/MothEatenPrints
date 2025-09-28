@@ -1,7 +1,7 @@
 <template>
   <div class="artwork-card" :class="{ archived: isArchived }">
     <div class="artwork-image">
-      <img :src="artwork.images[0]" :alt="artwork.title">
+      <img :src="getImagePath(artwork.images[0])" :alt="artwork.title">
       <div class="overlay">
         <span>View Details</span>
       </div>
@@ -31,6 +31,14 @@ export default {
     isArchived: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    getImagePath(imagePath) {
+      // Remove leading slash if present to avoid double slashes
+      const cleanPath = imagePath.startsWith('./') ? imagePath.substring(2) : 
+                        imagePath.startsWith('/') ? imagePath.substring(1) : imagePath;
+      return `${import.meta.env.BASE_URL}${cleanPath}`;
     }
   }
 }

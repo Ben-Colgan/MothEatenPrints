@@ -3,7 +3,7 @@
     <header>
       <div class="container">
         <div class="header-top">
-          <img src="/images/moth-logo.jpg" alt="MothEaten Prints Logo" class="logo">
+          <img :src="logoPath" alt="MothEaten Prints Logo" class="logo">
           <h1>MothEaten Prints</h1>
         </div>
         <nav class="tabs">
@@ -60,9 +60,11 @@ export default {
   },
   setup() {
     const activeTab = ref('artwork')
+    const logoPath = ref(import.meta.env.BASE_URL + 'images/moth-logo.jpg')
     
     return {
-      activeTab
+      activeTab,
+      logoPath
     }
   }
 }
