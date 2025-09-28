@@ -1,0 +1,137 @@
+// Variables
+$primary-color: #f1f1f1;
+$secondary-color: #a8a8a8;
+$background-color: #121212;
+$dark-section-bg: #181818;
+$accent-color: #c792ea; // Purple accent similar to SpaceWolf
+$font-family: 'Inter', 'Helvetica Neue', sans-serif;
+$card-bg-color: #1e1e1e;
+$border-color: #2a2a2a;
+$success-color: #50fa7b;
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $primary-color;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Header styles
+header {
+  background-color: rgba(18, 18, 18, 0.95);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  
+  h1 {
+    color: $primary-color;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+}
+
+// Gallery styles
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+// Modal styles
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: $dark-section-bg;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid $border-color;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    color: $primary-color;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+  
+  .artwork-details {
+    margin-bottom: 20px;
+    
+    p {
+      margin-bottom: 8px;
+      color: $secondary-color;
+    }
+    
+    .label {
+      font-weight: 600;
+      color: $accent-color;
+    }
+    
+    .description {
+      margin-top: 15px;
+      line-height: 1.7;
+      color: $primary-color;
+      font-size: 0.95rem;
+    }
+  }
+  
+  .close-button {
+    background-color: transparent;
+    color: $primary-color;
+    border: 1px solid $accent-color;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    
+    &:hover {
+      background-color: $accent-color;
+      color: #121212;
+    }
+  }
+}
